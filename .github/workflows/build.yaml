@@ -15,4 +15,6 @@ jobs:
       - name: List Current files in directory
         run: ls
       - name: Check dotnet cli
-        run: dotnet
+        run: dotnet build
+      - name: List filled directory
+        run: ls TrickingLibrary.Api/ -R
